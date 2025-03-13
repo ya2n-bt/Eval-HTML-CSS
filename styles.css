@@ -4,6 +4,27 @@ body{
     margin: 0;
 }
 
+.boutton {
+    padding: 15px 30px;
+    background: #c1b086;
+    border-radius: 25px;
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0 25px 100px black ;
+    border: white 1.5px solid;
+
+
+}
+
+#Home {
+    background: url(images/home1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+}
+
 .tete {
     display: flex;
     justify-content: space-between;
@@ -36,15 +57,6 @@ body{
     color: #c1b086;
 }
 
-
-
-#Home {
-    background: url(images/home1.jpg);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    height: 100vh;
-}
 
 #Home h1::after{
     position: absolute;
