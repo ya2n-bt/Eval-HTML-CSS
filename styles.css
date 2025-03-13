@@ -82,9 +82,28 @@ body{
 }
 
 #About {
+    justify-content: center;
     height: 100vh;
     position: relative;
 }
+
+.About_image1 {
+    width: 325px;
+    height: 450px ;
+}
+
+.About_image2 {
+    width: 300px;
+    height: 200px ;
+}
+
+#About span h2::before{
+    position: absolute;
+    content: "";
+    width: 7%;
+    border: #c1b086 2px solid;
+}
+
 
 #Amenities {
     height: 100vh;
