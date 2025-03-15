@@ -5,6 +5,7 @@ body{
 }
 
 .boutton {
+    position: absolute;
     padding: 15px 30px;
     background: #c1b086;
     border-radius: 25px;
@@ -13,7 +14,8 @@ body{
     color: white;
     box-shadow: 0 25px 100px black ;
     border: white 1.5px solid;
-
+    margin-top: 40px;
+    margin-left: 50px
 
 }
 
@@ -88,22 +90,68 @@ body{
 }
 
 .About_image1 {
+    position: absolute;
     width: 325px;
-    height: 450px ;
+    height: 450px;
+    margin-left: 7%;
+    margin-top: 8%;
+    border-radius: 6%;
+    border: #c1b086 4px solid;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
 }
 
 .About_image2 {
+    position: absolute;
     width: 300px;
     height: 200px ;
+    margin-left: 19%;
+    margin-top: 23.5%;
+    border-radius: 10%;
+    border: #c1b086 3px solid;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
 }
 
 #About span h2::before{
     position: absolute;
     content: "";
-    width: 7%;
+    width: 15%;
+    top: -20px;
     border: #c1b086 2px solid;
 }
 
+#About span {
+    display: block;
+    position: absolute;
+    width: 40%;
+    top: 23%;
+    left: 50%;
+}
+
+#About span h1 {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 10px 0;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+#About span h2 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: grey;
+    text-transform: uppercase;
+}
+
+#About span p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.3;
+    margin-top: 10px;
+    margin-left: 8%;
+    text-align: justify;
+    padding-bottom: 10px;
+}
 
 #Amenities {
     height: 100vh;
