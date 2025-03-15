@@ -89,23 +89,32 @@ body{
     position: relative;
 }
 
+#About img {
+    transition: 0.5s;
+}
+
+#About img:hover {
+    transform: scale(1.2);
+}
+
 .About_image1 {
     position: absolute;
-    width: 325px;
-    height: 450px;
-    margin-left: 7%;
-    margin-top: 8%;
+    width: 260px;
+    height: 350px;
+    margin-left: 10%;
+    margin-top: 10%;
     border-radius: 6%;
     border: #c1b086 4px solid;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
+    transform: scale(1.1);
 }
 
 .About_image2 {
     position: absolute;
-    width: 300px;
-    height: 200px ;
+    width: 280px;
+    height: 185px ;
     margin-left: 19%;
-    margin-top: 23.5%;
+    margin-top: 25%;
     border-radius: 10%;
     border: #c1b086 3px solid;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
