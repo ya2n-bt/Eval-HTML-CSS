@@ -89,6 +89,7 @@ body{
 #Amenities {
     height: 100vh;
     position: relative;
+    background-color: rgb(0, 0, 0, 0.2);
 }
 
 #Rooms {
