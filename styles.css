@@ -96,6 +96,14 @@ body{
     position: relative;
 }
 
+#Rooms span h2::before{
+    position: absolute;
+    content: "";
+    width: 15%;
+    top: -20px;
+    border: #c1b086 2px solid;
+}
+
 #Restaurant {
     height: 100vh;
     position: relative;
