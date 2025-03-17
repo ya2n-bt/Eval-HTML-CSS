@@ -101,6 +101,22 @@ body{
     position: relative;
 }
 
+#Restaurant .grille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+#Restaurant .image_grille {
+    position: relative;
+    border-radius: 12px;
+    width: 350px;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+
 #Gallery {
     height: 100vh;
     position: relative;
