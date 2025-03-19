@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 body{
     padding: 0;
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 .boutton {
@@ -35,9 +38,10 @@ body{
 .tete nav {
     display: flex;
     gap: 35px;
-    width: 30%;
-    margin-right: 100px;
+    width: 35%;
+    margin-right: 80px;
     margin-top: 8px;
+    margin-left: 50px;
     padding: 0;
 }
 
@@ -53,34 +57,42 @@ body{
     color: white;
     margin-top: 25px; 
     transition: 0.5s;
+    font-weight: 380;
+    font-size: 15px;
 }
 
 .tete a:hover {
     color: #c1b086;
 }
 
-
-#Home h1::after{
-    position: absolute;
-    top: 11%;
-    left: 16%;
-    opacity: 0.3;
-    content: "H";
-    font-size: 360px;
-}
-
 #Home span {
     display: block;
     margin-left: 220px;
-    margin-top: 170px;
+    margin-top: 180px;
 }
 
 #Home span h1 {
-    font-size: 75px;
+    font-size: 65px;
+    font-weight: 380;
 }
 
 #Home span p {
-    width: 60%;
+    width: 53%;
+    margin-left: 50px;
+    margin-top: 55px;
+    font-size: 14px;
+    font-weight: 350;
+    text-align: justify;
+}
+
+#Home h1::after{
+    position: absolute;
+    top: 7%;
+    left: 16%;
+    opacity: 0.2;
+    content: "H";
+    font-size: 360px;
+    font-weight: 700;
 }
 
 #About {
@@ -89,43 +101,34 @@ body{
     position: relative;
 }
 
+.About_image1 {
+    position: absolute;
+    width: 265px;
+    height: 410px;
+    margin-left: 10%;
+    margin-top: 11.5%;
+    border-radius: 25px;
+    border: #c1b086 3px solid;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.About_image2 {
+    position: absolute;
+    width: 280px;
+    height: 190px ;
+    margin-left: 20%;
+    margin-top: 29%;
+    border-radius: 10%;
+    border: #c1b086 3px solid;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
+}
+
 #About img {
     transition: 0.5s;
 }
 
 #About img:hover {
     transform: scale(1.2);
-}
-
-.About_image1 {
-    position: absolute;
-    width: 260px;
-    height: 350px;
-    margin-left: 10%;
-    margin-top: 10%;
-    border-radius: 6%;
-    border: #c1b086 4px solid;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
-    transform: scale(1.1);
-}
-
-.About_image2 {
-    position: absolute;
-    width: 280px;
-    height: 185px ;
-    margin-left: 19%;
-    margin-top: 25%;
-    border-radius: 10%;
-    border: #c1b086 3px solid;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
-}
-
-#About span h2::before{
-    position: absolute;
-    content: "";
-    width: 15%;
-    top: -20px;
-    border: #c1b086 2px solid;
 }
 
 #About span {
@@ -137,29 +140,55 @@ body{
 }
 
 #About span h1 {
-    font-family: "Georgia", "Times New Roman", serif;
-    font-weight: 500;
-    font-size: 30px;
-    margin: 10px 0;
+    font-weight: 430;
+    font-size: 26px;
+    margin: 20px 0;
     color: #333;
     padding-bottom: 10px;
 }
 
 #About span h2 {
-    font-size: 12px;
+    font-size: 10px;
+    font-weight: 500;
     letter-spacing: 2px;
     color: grey;
     text-transform: uppercase;
+    margin-top: 17px;
+}
+
+#About span h2::before{
+    position: absolute;
+    content: "";
+    width: 15%;
+    top: -20px;
+    border: #c1b086 2px solid;
 }
 
 #About span p {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 380;
     color: #666;
     line-height: 1.3;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-left: 8%;
     text-align: justify;
     padding-bottom: 10px;
+}
+
+#About span .p {
+    font-size: 14px;
+    font-weight: 380;
+    color: #666;
+    line-height: 1.3;
+    margin-top: 20px;
+    margin-left: 8%;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+#About a {
+    position: absolute;
+    top: 106%;
 }
 
 #Amenities {
@@ -180,9 +209,9 @@ body{
     position: absolute;
     padding: 3%;
     width: 40%;
-    height: 48%;
+    height: 43%;
     color: white;
-    background-color: #51A5C7;
+    background-color: #3f9cc1 ;
     border-radius: 20px;
     border: #c1b086 3px solid;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
@@ -196,10 +225,16 @@ body{
     opacity: 1;
 }
 
-#Amenities p {
+#Amenities .Boite span h1 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#Amenities .Boite span p {
+    margin-top: 20px;
     text-align: justify;
-    line-height: 2.3;
-    font-size: 15px;
+    line-height: 2;
+    font-size: 11px;
 }
 
 #Amenities .icone {
@@ -214,6 +249,7 @@ body{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    font-size: 12px;
 }
 
 #Amenities ul li i {
@@ -237,16 +273,15 @@ body{
 }
 
 #Rooms .Titre span h1 {
-    font-family: "Georgia", "Times New Roman", serif;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 450;
+    font-size: 26px;
     margin: 23px 0;
     color: #333;
     padding-bottom: 10px;
 }
 
 #Rooms .Titre span h2 {
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 2px;
     color: grey;
     text-transform: uppercase;
@@ -256,21 +291,21 @@ body{
     position: absolute;
     display: block;
     content: "";
-    width: 7.5%;
+    width: 6.5%;
     top: 30px; 
     border: #c1b086 2px solid;
 }
 
 #Rooms a {
     position: absolute;
-    top: 13%;
+    top: 5.5%;
     right: 11%;
 }
 
 .chambre {
     display: flex;
     width: 80%;
-    margin: 1.5% 0 0 10%;
+    margin: 0 0 0 10%;
     gap: 30px;
 }
 
@@ -278,7 +313,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 350px;
-    height: 400px;
+    height: 480px;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -299,24 +334,28 @@ body{
 
 .fenetre .description h1 {
     color: black;
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: 500;
     margin-bottom: -10px;
+    margin-top: 15px;
 }
 
 .fenetre .description span p {
-    font-weight: 580;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 25px;
 }
 
 #Rooms .fenetre  p::before {
     content: "$";
     font-size: 0.8em;
-    color: #c1b086;
+    color: grey;
 }
 
 #Rooms .fenetre p::after {
     content: " /per night";
     font-size: 0.8em;
-    color: #c1b086;
+    color: grey;
 }
 
 #Restaurant {
@@ -330,26 +369,30 @@ body{
     margin-top: 30px;
 }
 
-#Restaurant .description_restaurant span p {    
-    font-size: 13px;
-    color: #666;
-    margin-left: 40px;
-    margin-top: 30px;
-    width: 56%;
+#Restaurant span h2{
+    font-weight: 430;
 }
 
 #Restaurant span h2::before{
     position: absolute;
     content: "";
     width: 5.5%;
-    top: 28px;
+    top: 30px;
     border: #c1b086 1.5px solid;
+}
+
+#Restaurant .description_restaurant span p {    
+    font-size: 13px;
+    color: #666;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 56%;
 }
 
 #Restaurant a{
     position: absolute;
     right: 13%;
-    top: 10%;
+    top: 4%;
 }
 
 #Restaurant .image_gauche img {
@@ -358,7 +401,7 @@ body{
     margin-left: 10%;
     margin-top: 2%;
     width: 370px;
-    height: 530px;
+    height: 620px;
     border-radius: 20px;
     border: #c1b086 3px solid;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
@@ -371,16 +414,16 @@ body{
     gap: 20px;
     width: 50%;
     margin-left: 37.5%;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 #Restaurant .image_grille {
     position: relative;
     background-position: center;
     background-size: cover;
-    border-radius: 12px;
+    border-radius: 25px;
     width: 100%;
-    height: 188px;
+    height: 220px;
     border: #c1b086 3px solid;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
     overflow: hidden;
@@ -396,24 +439,28 @@ body{
     align-items: center;
     text-align: center;
     height: 20%;
-    font-size: 22px;
+    font-size: 19px;
+    font-weight: 300;
     opacity: 0;
-    transition: 1s ease;
+    transition: 0.7s ease;
 }
 
-
-
 #Restaurant .overlay_description {
+    display: flex;
+    justify-content: center;
     color: white;
     transform: translateY(-120px);
     margin: 0 0 0 5%;
+    margin-left: 24px;
+    padding-left: 3%;
+    padding-right: 3%;
     background-color:rgb(193, 176, 134);
-    width: 90%;
+    width: 80%;
     text-align: justify;
-    font-size: 14px;
-    border-radius: 5px;
+    font-size: 13px;
+    border-radius: 15px;
     opacity: 0;
-    transition: 1s ease;
+    transition: 0.7s ease;
 }
 
 #Restaurant .image_grille:hover .overlay_titre {
@@ -440,8 +487,7 @@ body{
 }
 
 #Gallery .Head span h1 {
-    font-family: "Georgia", "Times New Roman", serif;
-    font-weight: 500;
+    font-weight: 430;
     font-size: 28px;
     margin: 23px 0;
     color: #333;
@@ -466,7 +512,7 @@ body{
 
 #Gallery a {
     position: absolute;
-    top: 11%;
+    top: 6%;
     right: 10%;
 }
 
@@ -479,16 +525,16 @@ body{
 
 #Gallery .Contenu_image {
     width: 5%;
-    height: 435px;
+    height: 500px;
     background-position: center;
     background-size: cover;
     display: flex;
     border-radius: 20px;
     border: #c1b086 4px solid;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2), -2px 4px 6px rgba(0, 0, 0, 0.2);
     transition: 1s ease;
+    opacity: 0.5;
 }
-
 
 #img1:checked ~ .Contenu_image:nth-of-type(1),
 #img2:checked ~ .Contenu_image:nth-of-type(2), 
@@ -499,4 +545,7 @@ body{
 #img7:checked ~ .Contenu_image:nth-of-type(7),
 #img8:checked ~ .Contenu_image:nth-of-type(8) {
     width: 100%;
+    opacity: 1;
+    border: #664f14 3px solid;
+    box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.25), -3px 6px 8px rgba(0, 0, 0, 0.25);
 }
