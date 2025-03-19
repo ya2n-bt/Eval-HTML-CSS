@@ -324,6 +324,108 @@ body{
     position: relative;
 }
 
+#Restaurant .description_restaurant span {
+    display: inline-block;
+    margin-left: 37.5%;
+    margin-top: 30px;
+}
+
+#Restaurant .description_restaurant span p {    
+    font-size: 13px;
+    color: #666;
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 56%;
+}
+
+#Restaurant span h2::before{
+    position: absolute;
+    content: "";
+    width: 5.5%;
+    top: 28px;
+    border: #c1b086 1.5px solid;
+}
+
+#Restaurant a{
+    position: absolute;
+    right: 13%;
+    top: 10%;
+}
+
+#Restaurant .image_gauche img {
+    position: absolute;
+    background-position: center;
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 370px;
+    height: 530px;
+    border-radius: 20px;
+    border: #c1b086 3px solid;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
+    object-fit: cover;
+}
+
+#Restaurant .grille {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 50%;
+    margin-left: 37.5%;
+    margin-top: 5px;
+}
+
+#Restaurant .image_grille {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    width: 100%;
+    height: 188px;
+    border: #c1b086 3px solid;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
+    overflow: hidden;
+}
+
+#Restaurant .overlay_titre {
+    display: flex;
+    justify-content: center;
+    color: white;
+    transform: translateY(150px);
+    background-color:rgb(193, 176, 134);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    font-size: 22px;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+
+
+#Restaurant .overlay_description {
+    color: white;
+    transform: translateY(-120px);
+    margin: 0 0 0 5%;
+    background-color:rgb(193, 176, 134);
+    width: 90%;
+    text-align: justify;
+    font-size: 14px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+#Restaurant .image_grille:hover .overlay_titre {
+    opacity: 0.9;
+    transform: translateY(20px);
+}
+
+#Restaurant .image_grille:hover .overlay_description {
+    opacity: 0.9;
+    transform: translateY(30px);
+}
+
 #Gallery {
     height: 100vh;
     position: relative;
